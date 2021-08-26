@@ -11,6 +11,9 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  font-family: "Barlow", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .attribution a {
@@ -32,10 +35,10 @@ body {
 
 .scoreboard {
   width: 700px;
-  height: 150px;
+  height: 130px;
   border: 1px solid white;
   border-radius: 15px;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,7 +53,7 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 5px;
-  margin-right: 30px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +78,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 476px;
-  height: 430px;
+  height: 400px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -97,4 +100,51 @@ body {
 
 .hand:hover {
   transform: translate3d(0px, -8px, 0px);
+}
+
+.contest {
+  width: 900px;
+  display: none;
+  margin-top: 50px;
+}
+
+.contest > div {
+  flex: 1;
+}
+
+.contest h1 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contest .handImageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.referee {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.referee h1 {
+  font-size: 45px;
+}
+
+.referee .newGame {
+  background: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: hsl(229, 25%, 31%);
+  transition: all 0.15s;
+}
+
+.newGame:hover {
+  background: bisque;
+  transform: translate3d(0px, -2px, 0px);
 }
